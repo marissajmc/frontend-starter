@@ -3,9 +3,9 @@
 
     module.exports = function(grunt){
         grunt.registerTask('default', [
-            "jshint",
-            "sass",
-            "uglify",
+            "js",
+            "css",
+            "image",
             "styleguide"
         ]);
     };
