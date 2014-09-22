@@ -23,7 +23,8 @@
                         debug : true,
                         transform : [
                             'debowerify'
-                        ]
+                        ],
+                        baseDir : ""
                     },
                     watch : watching ? true : false,
                     keepAlive : watching ? true : false
