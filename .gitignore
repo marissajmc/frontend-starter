@@ -10,3 +10,6 @@ node_modules
 # tmp - ignore bower stuff
 src/vendor
 
+
+# Grunt tmp files
+.grunt
