@@ -18,13 +18,12 @@
 
         config.common = {};
         config.common.files = _.object(commonCssFiles, commonSassFiles);
-
         return config;
     };
 
     function getFilesToCompile(path) {
         return _.map(glob.sync('*.scss', {cwd: path}), function(file){
-            return path + file;
+            return process.cwd() + "/" + path + file;
         });
     }
 

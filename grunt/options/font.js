@@ -8,7 +8,7 @@
                 destCss : "src/sass/partials/_icons.scss",
                 destFonts : "dist/icons/icons.{svg,woff,eot,ttf}",
                 cssRouter: function (fontpath) {
-                    return '../' + fontpath;
+                    return '../../' + fontpath;
                 }
 
             }
