@@ -11,10 +11,10 @@
                 files : "src/img/**",
                 tasks : ["image"]
             },
-            jshint : {
-                files : ["src/js/*.js", "src/js/modules/**/*.js"],
-                tasks : ["newer:jshint:common"]
-            },
+            // jshint : {
+            //     files : ["src/js/*.js", "src/js/modules/**/*.js"],
+            //     tasks : ["newer:jshint:common"]
+            // },
             icons : {
                 files : ["src/icons/*.svg"],
                 tasks : ["font"]

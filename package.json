@@ -2,9 +2,18 @@
   "name": "frontend-starter",
   "version": "0.0.0",
   "description": "A boilerplate for starting frontend web projects",
-  "main": "js/main.js",
+  "main": "src/js/main.js",
   "scripts": {
     "test": "grunt test"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim",
+      "debowerify"
+    ]
+  },
+  "browserify-shim": {
+    "jquery": "$"
   },
   "repository": {
     "type": "git",
@@ -17,13 +26,13 @@
   },
   "homepage": "https://github.com/dancoates/frontend-starter",
   "devDependencies": {
+    "browserify": "^5.12.0",
+    "browserify-shim": "^3.7.0",
     "debowerify": "^0.8.1",
-    "exorcist": "^0.1.6",
     "glob": "^4.0.6",
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^1.0.1",
     "grunt-browser-sync": "^1.3.7",
-    "grunt-browserify": "^3.0.1",
     "grunt-concurrent": "^1.0.0",
     "grunt-contrib-imagemin": "^0.8.1",
     "grunt-contrib-jasmine": "^0.8.0",
@@ -35,7 +44,8 @@
     "load-grunt-tasks": "^0.6.0",
     "minifyify": "^4.2.0",
     "simple-styleguides": "git://github.com/dancoates/simple-styleguides",
-    "underscore": "^1.7.0"
+    "underscore": "^1.7.0",
+    "watchify": "^1.0.2"
   },
   "dependencies": {}
 }
