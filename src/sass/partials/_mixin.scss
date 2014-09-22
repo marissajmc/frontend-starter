@@ -1,0 +1,42 @@
+
+/*==============================
+=            Mixins            =
+==============================*/
+
+
+/*==========  Icon mixin  ==========*/
+
+/**
+*
+* Mixin to override grunt-fontsmith's icon mixin.
+* This mixin allows a bit more functionality including
+* specifying whether to use :before or :after pseudo element
+* and manually modifying an icon's font size.
+*
+**/
+
+
+@mixin icon($name, $position: before) {
+    &:#{$position} {
+        @include icon-content($name);
+
+        @include icon-font-family($name);
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+        // Custom sizing
+        @if($name == $cross) {
+            font-size: 0.84em;
+        }
+        
+        @content;
+    }
+}

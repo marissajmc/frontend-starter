@@ -3,7 +3,7 @@
 
     module.exports = function(grunt){
         grunt.registerTask('css', [
-            "newer:sass",
+            "sass",
             "newer:autoprefixer"
         ]);
     };

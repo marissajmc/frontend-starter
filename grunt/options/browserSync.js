@@ -5,7 +5,7 @@
         var config = {
             dev: {
                 bsFiles : {
-                    src : ["dist/js/*.js", "dist/css/*.css", "dist/img/**"]
+                    src : ["dist/js/*.js", "dist/css/*.css", "dist/img/**", 'dist/icons/**']
                 },
                 options: {
                     watchTask: true,
