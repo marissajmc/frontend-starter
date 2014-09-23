@@ -4,7 +4,7 @@
     module.exports = function(grunt){
         grunt.registerTask('js', [
             "newer:jshint",
-            "browserify"
+            "newer:uglify"
         ]);
     };
 

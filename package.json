@@ -6,14 +6,10 @@
   "scripts": {
     "test": "grunt test"
   },
-  "browserify": {
-    "transform": [
-      "browserify-shim",
-      "debowerify"
+  "js" : {
+    "main" : [
+      "src/js/main.js"
     ]
-  },
-  "browserify-shim": {
-    "jquery": "$"
   },
   "repository": {
     "type": "git",
@@ -26,26 +22,21 @@
   },
   "homepage": "https://github.com/dancoates/frontend-starter",
   "devDependencies": {
-    "browserify": "^5.12.0",
-    "browserify-shim": "^3.7.0",
-    "debowerify": "^0.8.1",
     "glob": "^4.0.6",
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^1.0.1",
     "grunt-browser-sync": "^1.3.7",
-    "grunt-concurrent": "^1.0.0",
     "grunt-contrib-imagemin": "^0.8.1",
     "grunt-contrib-jasmine": "^0.8.0",
     "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.6.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-fontsmith": "^0.9.1",
     "grunt-newer": "^0.7.0",
     "grunt-sass": "^0.14.1",
     "load-grunt-tasks": "^0.6.0",
-    "minifyify": "^4.2.0",
     "simple-styleguides": "git://github.com/dancoates/simple-styleguides",
-    "underscore": "^1.7.0",
-    "watchify": "^1.0.2"
+    "underscore": "^1.7.0"
   },
   "dependencies": {}
 }
