@@ -18,6 +18,9 @@
             icons : {
                 files : ["src/icons/*.svg"],
                 tasks : ["font"]
+            },
+            options : {
+                spawn : false
             }
         };
         return config;
