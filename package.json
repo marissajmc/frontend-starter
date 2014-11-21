@@ -1,26 +1,29 @@
 {
-  "name": "frontend-starter",
+  "name": "project",
   "version": "0.0.0",
-  "description": "A boilerplate for starting frontend web projects",
   "main": "src/js/main.js",
-  "scripts": {
-    "test": "grunt test"
-  },
   "js" : {
     "main" : [
+      "src/vendor/underscore/underscore.js",
+      "src/vendor/foundation/js/foundation/foundation.js",
+      "src/vendor/foundation/js/foundation/foundation.interchange.js",
+      "src/vendor/foundation/js/foundation/foundation.abide.js",
+      "src/js/modules/overlay.js",
+      "src/js/modules/toggle.js",
+      "src/js/plugins.js",
       "src/js/main.js"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/dancoates/frontend-starter.git"
+    "url": ""
   },
-  "author": "Dan Coates",
+  "author": "Marissa Cookson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dancoates/frontend-starter/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/dancoates/frontend-starter",
+  "homepage": "",
   "devDependencies": {
     "glob": "^4.0.6",
     "grunt": "^0.4.5",
@@ -35,7 +38,6 @@
     "grunt-newer": "^0.7.0",
     "grunt-sass": "^0.14.1",
     "load-grunt-tasks": "^0.6.0",
-    "simple-styleguides": "git://github.com/dancoates/simple-styleguides",
     "underscore": "^1.7.0"
   },
   "dependencies": {}
