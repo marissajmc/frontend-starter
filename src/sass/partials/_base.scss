@@ -1,0 +1,24 @@
+/* -------------------------------
+   Base styles
+------------------------------- */
+
+$primary-color: #000;
+$branded-font: "Name",Arial,sans-serif;
+
+*,
+*:after,
+*:before {
+  	@include box-sizing(border-box);
+  	-webkit-text-size-adjust: none;
+  	margin: 0;
+  	padding: 0;
+}
+
+body {
+	font-family: Arial,serif;
+	@include font(15);
+	@media #{$medium-up} {
+	}	
+	@media #{$large-up} {
+	}
+}

@@ -1,8 +1,6 @@
-
-/*==============================
-=            Mixins            =
-==============================*/
-
+/* -------------------------------
+   Mixins
+------------------------------- */
 
 /*==========  Icon mixin  ==========*/
 
@@ -14,8 +12,6 @@
 * and manually modifying an icon's font size.
 *
 **/
-
-
 @mixin icon($name, $position: before) {
     &:#{$position} {
         @include icon-content($name);
@@ -40,3 +36,41 @@
         @content;
     }
 }
+
+/* https://coderwall.com/p/_7wmcg 
+Font sizing with Rems and a pixel fallback */
+$base_font_size: 16;
+@mixin font($pixels, $weight : normal, $style: normal) {
+    font-size: $pixels + px;
+    font-size: ( $pixels / $base_font_size ) + rem;
+    font-weight: $weight;
+    font-style: $style;
+}
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+     -moz-box-sizing: $box-model; // Firefox <= 19
+          box-sizing: $box-model;
+}
+
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin breakpoint($point) {
+    @if $point == sml-tablet-pt {
+        @media screen and (min-width:481px) and (max-width:640px) { @content ; }
+    }
+    /*@else if $point == laptop {
+        @media (min-width: 64em) { @content ; }
+    }*/
+}
+// @include breakpoint(breakpointname) 
