@@ -4,7 +4,8 @@
   "description": "A boilerplate for starting frontend web projects",
   "main": "src/js/main.js",
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "postinstall" : "node grunt/postinstall.js"
   },
   "js" : {
     "main" : [
