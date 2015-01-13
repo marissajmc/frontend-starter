@@ -5,7 +5,7 @@
         var config = {
             css: {
                 files: "src/sass/**",
-                tasks : ["css"]
+                tasks : ["css","styleguide"]
             },
             img : {
                 files : "src/img/**",
