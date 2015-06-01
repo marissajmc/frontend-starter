@@ -7,10 +7,6 @@
                 files: "src/sass/**",
                 tasks : ["css"]
             },
-            img : {
-                files : "src/img/**",
-                tasks : ["image"]
-            },
             js : {
                 files : ["src/js/*.js", "src/js/modules/**/*.js"],
                 tasks : ["newer:jshint:common", "uglify"]

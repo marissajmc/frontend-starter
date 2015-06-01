@@ -4,7 +4,7 @@
     module.exports = function(grunt){
         grunt.registerTask('css', [
             "sass",
-            "newer:autoprefixer"
+            "autoprefixer"
         ]);
     };
 

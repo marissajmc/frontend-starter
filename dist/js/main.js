@@ -1,2 +1,2 @@
-!function(){"use strict";console.log("woot")}();
+!function(){"use strict";console.log("woot"),console.log("loot")}();
 //# sourceMappingURL=main.js.map
