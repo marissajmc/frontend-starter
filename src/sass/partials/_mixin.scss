@@ -27,11 +27,6 @@
         /* Better Font Rendering =========== */
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-
-        // Custom sizing
-        @if($name == $cross) {
-            font-size: 0.84em;
-        }
         
         @content;
     }

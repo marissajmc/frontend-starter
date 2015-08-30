@@ -5,11 +5,11 @@
         var config = {
             dev: {
                 bsFiles : {
-                    src : ["dist/js/*.js", "dist/css/*.css", "dist/img/**", 'dist/icons/**']
+                    src : ["dist/js/*.js", "dist/css/*.css", "src/img/**", 'dist/icons/**']
                 },
                 options: {
                     watchTask: true,
-                    proxy : "localhost:1234"
+                    proxy : "localhost:1235"
                 }
             }
         };

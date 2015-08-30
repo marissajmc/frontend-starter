@@ -7,7 +7,7 @@ node_modules
 # Don't commit sourcemap files
 *.map
 
-# tmp - ignore bower stuff
+# Ignore bower stuff
 src/vendor
 
 
