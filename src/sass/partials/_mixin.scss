@@ -2,16 +2,15 @@
    Mixins
 ------------------------------- */
 
-/*==========  Icon mixin  ==========*/
-
 /**
 *
-* Mixin to override grunt-fontsmith's icon mixin.
+* Mixin to override grunt-webfont's icon mixin.
 * This mixin allows a bit more functionality including
 * specifying whether to use :before or :after pseudo element
 * and manually modifying an icon's font size.
 *
 **/
+
 @mixin icon($name, $position: before) {
     &:#{$position} {
         @include icon-content($name);
@@ -27,27 +26,16 @@
         /* Better Font Rendering =========== */
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+
+        @if $position == before {
+            margin-right: rem-calc(4);
+            position: relative;
+            top: 1px;
+        }
         
         @content;
     }
 }
-
-/* https://coderwall.com/p/_7wmcg 
-Font sizing with Rems and a pixel fallback */
-$base_font_size: 16;
-@mixin font($pixels, $weight : normal, $style: normal) {
-    font-size: $pixels + px;
-    font-size: ( $pixels / $base_font_size ) + rem;
-    font-weight: $weight;
-    font-style: $style;
-}
-
-@mixin box-sizing($box-model) {
-  -webkit-box-sizing: $box-model; // Safari <= 5
-     -moz-box-sizing: $box-model; // Firefox <= 19
-          box-sizing: $box-model;
-}
-
 
 @mixin clearfix() {
     &:before,
@@ -59,13 +47,3 @@ $base_font_size: 16;
         clear: both;
     }
 }
-
-@mixin breakpoint($point) {
-    @if $point == sml-tablet-pt {
-        @media screen and (min-width:481px) and (max-width:640px) { @content ; }
-    }
-    /*@else if $point == laptop {
-        @media (min-width: 64em) { @content ; }
-    }*/
-}
-// @include breakpoint(breakpointname) 

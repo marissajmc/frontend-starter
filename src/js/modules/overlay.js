@@ -14,7 +14,6 @@
         _public.settings = _.extend(_private.defaults, options);
 
         _public.init = function() {
-
             $('.overlay-launch').on('click',function(e){
                 e.preventDefault();
 

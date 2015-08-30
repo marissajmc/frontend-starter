@@ -6,13 +6,20 @@ $include-html-classes: false;
 
 // Include these classes
 $include-html-grid-classes: true;
-// $include-html-block-grid-classes: true;
-// $include-html-nav-classes: true;
-// $include-html-form-classes: true;
-// $include-html-visibility-classes: true;
-// $include-html-accordion-classes: true;
 
-// mediq query ranges
+// Colors
+$body-font-color: #000;
+$primary-color: #3399ff;
+$anchor-font-color-hover: $primary-color;
+
+// $row-width: rem-calc(1100);
+
+// Fonts
+$brand-font-family: "Trebuchet MS";
+$body-font-family: "Arial";
+$body-font-size: rem-calc(15);
+
+// media query ranges
 $small-range: (0em, 40em);
 $medium-range: (40.063em, 63em);
 $large-range: (63.063em, 90em);

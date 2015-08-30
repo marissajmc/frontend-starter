@@ -10,7 +10,8 @@ var conf = {
     options : {
         sourceMap : true,
         outputStyle : 'compressed',
-        sourceMapContents : true
+        sourceMapContents : true,
+        includePaths: ['src/vendor/foundation/scss']
     }
 };
 

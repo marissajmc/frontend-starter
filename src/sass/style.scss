@@ -9,16 +9,18 @@
 *
 **/
 
-/*==========  Foundation Settings  ==========*/
-@import "settings";
+@import "partials/icons";
+@import "partials/mixin";
+@import "partials/settings";
+@import "partials/base";
 
-/*==========  Foundation components  ==========*/
-// Add required foundation components here
+// Foundation
+
 @import
 
 //	 "foundation/components/accordion",
 //   "foundation/components/alert-boxes",
-//   "foundation/components/block-grid", 
+	"foundation/components/block-grid", 
 //   "foundation/components/breadcrumbs",
 //   "foundation/components/button-groups",
 //   "foundation/components/buttons",
@@ -48,17 +50,25 @@
 //   "foundation/components/thumbs",
 //   "foundation/components/tooltips",
 //   "foundation/components/top-bar",
-//   "foundation/components/type",
+   	 "foundation/components/type",
 //   "foundation/components/offcanvas",
      "foundation/components/visibility";
 
 
-/*==========  Custom Styles  ==========*/
+// Vendor styles (3rd party base styles)
 
-@import 
-	"partials/icons.scss",
-	"partials/mixin.scss",
-	"partials/normalize.scss",
-	"partials/base.scss",
-	"partials/typography.scss",
-	"partials/layout.scss";
+// Utilities
+
+// Layout
+
+// Custom
+
+// Type
+
+// Blocks
+
+// Multimedia
+
+// UI
+
+// Navigation

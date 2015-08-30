@@ -13,3 +13,5 @@ src/vendor
 
 # Grunt tmp files
 .grunt
+
+*.orig

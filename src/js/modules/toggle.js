@@ -14,7 +14,6 @@
         _public.settings = _.extend(_private.defaults, options);
 
         _public.init = function() {
-
             $('[data-toggle-anchor]').on('click',function(e){
                 e.preventDefault();
                 $(this).toggleClass('open');

@@ -1,6 +1,7 @@
 {
   "name": "project",
   "version": "0.0.0",
+  "description": "",
   "main": "src/js/main.js",
   "scripts": {
     "test": "grunt test",
@@ -8,7 +9,14 @@
   },
   "js": {
     "main": [
+      "src/vendor/jquery/dist/jquery.js",
+      "src/js/modules/overlay.js",
+      "src/js/modules/toggle.js",
+      "src/js/plugins.js",
       "src/js/main.js"
+    ],
+    "modernizr": [
+      "src/vendor/modernizr/modernizr.js"
     ]
   },
   "repository": {
